@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    android:background="@color/textColor"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/choose_image_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_corner"
+        android:text="Choose Image" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="87dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/choose_image_button"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="-47dp"
+        android:layout_toStartOf="@+id/choose_image_button"
+        android:text="Message  "
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="20sp"
+        android:textColor="@color/buttonColor"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/message"
+        android:layout_marginTop="35dp"
+        android:text="Secret Key  "
+        android:textColor="@color/buttonColor"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/secret_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/buttonColor"
+        android:textColorHint="@color/buttonColor"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="Enter secret key"
+        android:inputType="textPassword"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/buttonColor"
+        android:textColorHint="@color/buttonColor"
+        android:layout_alignStart="@+id/secret_key"
+        android:layout_alignTop="@+id/textView"
+        android:ems="10"
+        android:hint="Enter message"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/encode_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="49dp"
+        android:layout_toStartOf="@+id/secret_key"
+        android:background="@drawable/rounded_corner"
+        android:text="Encode"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/save_image_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/encode_button"
+        android:layout_alignEnd="@+id/secret_key"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="@drawable/rounded_corner"
+        android:text="Save Image" />
+
+    <TextView
+        android:id="@+id/whether_encoded"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="299dp"
+        android:layout_marginEnd="131dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
